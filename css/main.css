@@ -1,0 +1,300 @@
+
+/* Barra de progreso */
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 7px;
+    background-color: #48091a;
+    width: 0%; /* Comienza en 0% */
+    z-index: 1000;
+  }
+
+
+
+.main-container{
+    position: relative;
+    top: 1em;
+    margin: auto;
+    width: 90vw;
+    height: auto;
+    padding-left: 1.3em;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+    
+
+}
+
+.container-img{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+
+}
+ .img-profile{
+    position: relative;
+    top: 3em;
+    left: 1.6em;
+    width: 500px;
+    height:500px;
+    border-radius: 50%;
+    border:solid 2px var(--ter-color);
+    margin: 1em;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+h2{
+    color: brown;
+    font-size: 1.7em;
+}
+
+.div-linea{
+    background-color: var(--ter-color);
+    width: 5em;
+    height: 0.3em;
+    background: linear-gradient(to right, var(--ter-color), #ff3453);
+}
+
+
+.container-poject{
+    display: flex;
+    justify-content: center;
+    padding-left: 1.3em;
+    height: auto;
+    position: relative;
+    top: 3em;
+}
+.container-cards{
+    width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        top:4em;
+}
+
+.cards-projects{
+    width: 500px;
+    height: 160px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0.9em;
+    font-family: var(--web-font);
+    border-radius: 5px;
+    background-color: var(--for-color);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container-descrption p{
+    font-family: var(--web-font);
+    font-size: 0.9em;
+}
+
+.cards-projects a{
+background-color: #e4c3bd;
+font-family:  var(--web-font);
+font-weight: bold;
+border-radius: 0.5em;
+position: relative;
+margin-top: 1em;
+cursor:pointer;
+display: flex;
+justify-content: center;
+text-decoration: none;
+color: black;
+padding: 0.5em;
+transition: transform 0.4s ease, background-color 0.4s ease;
+
+}
+.cards-projects a:hover{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    background-color: #f0dcd8;
+    transform: translateY(-6px) scale(1.1); /* Movimiento hacia arriba y agrandamiento */
+}
+
+
+.container-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6em; 
+    
+}
+
+.card-reference p span{
+    color:var(--ter-color);
+}
+
+.container-img img{
+    width: 4em;
+    height: 4em;
+
+}
+.container-descrption{
+    margin: 0.6em;
+}
+
+
+.container-reference{
+margin: auto;
+width: 90vw;
+height: auto;
+position: relative;
+top: 10em;
+
+}
+
+.card-references{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 1.6em;
+    
+}
+
+.card-reference{
+background-color:var(--for-color);
+margin: 0.5em;
+padding: 0.5em;
+width: 15em;
+height: 8em;
+border-radius: 5px;
+box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+   
+}
+
+.section-experienc{
+margin: auto;
+width: 90vw;
+height: max-content;
+position: relative;
+top: 22em;
+}
+
+
+.container-experience{
+    position: relative;
+    top: 1.3em;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container-experience .cards-experience{   
+    width: 15em;
+    height: 15em;
+    margin:auto;
+    border-radius: 5px;
+}
+
+.cards-experience{
+display: block;
+}
+
+.cards-experience img{
+    position: relative;
+    left: 4px;
+    width: 13em;
+    height: 13em;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    border-radius:50%;
+}
+
+
+
+progress {
+    appearance: none; /* Elimina el estilo por defecto */
+    width: 100%; /* Ajusta el ancho */
+    height: 20px; /* Ajusta el alto */
+    border-radius: 10px; /* Redondea las esquinas */
+    overflow: hidden;
+    background-color: var(--primary-color); /* Color del fondo de la barra */
+    border: 1px solid var(--ter-color); /* Borde de la barra */
+  }
+  
+  /* Estilo para la parte "rellena" de la barra de progreso */
+  progress::-webkit-progress-value {
+    background-color: var(--primary-color); /* Color del progreso (relleno) */
+    border-radius: 10px 0 0 10px; /* Redondea solo las esquinas izquierdas */
+    transition: width 0.3s ease; /* Transición suave del progreso */
+  }
+  
+  progress::-moz-progr-clas {
+    background-color: #3498db;
+    border-radius: 10px 0 0 10px;
+    transition: width 0.3s ease;
+  }
+  
+  progress::-ms-fill {
+    background-color: var(--second-color);
+    border-radius: 10px 0 0 10px;
+  }
+
+
+  .modal {
+    display: none; /* Oculta inicialmente */
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Contenido de la ventana modal */
+  .modal-content {
+    background-color: #e7e6e6;
+    padding: 10px;
+    width: 80%;
+    max-width: 750px;
+    height: auto;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Botón de cierre */
+  .close {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    background-color: #ff3453;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    top: -10px;
+    right: 2px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+
+  }
+  .close:hover {    
+    transform: translateY(-6px) scale(1.1); /* Movimiento hacia arriba y agrandamiento */
+  }
+
+.section-contactos{
+    margin: auto;
+width: 90vw;
+height: max-content;
+position: relative;
+top: 25em;
+  }
+
+.container-contactos span a i{
+    position: relative;
+    top: 2rem;
+    font-size: 2em;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--ter-color);
+}
